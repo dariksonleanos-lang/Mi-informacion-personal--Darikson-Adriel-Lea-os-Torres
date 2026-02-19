@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="log">Trabajo practico SHC</div>
+            <ul class="nav-links">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#propiedades">Propiedades</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="hero">
+            <h1>MI PERFIL PERSONAL</h1>
+            <p>Darikson Adriel Leaños Torres</p>
+            <a href="#propiedades">
+    <button class="cta-button">Ver detalles</button>
+</a>
+
+        </section>
+
+        <section id="propiedades">
+            <h2>Mi camino, mis logros, motivaciones y ambiciones</h2>
+            <div class="propiedades-grid">
+                <a href="#propiedades">
+    
+    <!-- CARD 1 -->
+    <div class="propiedad-card">
+        <img src="img/depositphotos_12824519-stock-illustration-graduation-cap-and-diploma-vector.jpg" alt="Formación">
+        <h3>Mi informacion y formacion personal</h3>
+        <button onclick="toggleInfo('formacion')">Ver detalles</button>
+
+        <div id="formacion" class="contenido">
+            <p>
+                Nacido en Sucre-Bolivia un 31 de enero de 2008<br>
+                Graduado de la escuela primaria Adolfo Siles <br>
+                Egresado como bachiller en el colegio Nacional Junin <br>
+                Egresado como Bachiller Tecnico Humanistico en Mecanica Automotriz del Colrgio Nacional Junin<br>
+                Nivel de ingles: Actualmente cursando el curso de ingles Tecnico en Tecnologia de la USFX y la First English con el objetivo de un nivel de ingles B2<br>
+                Actualmente estudiante de Ingeniería en Sistemas
+            </p>
+        </div>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="propiedad-card">
+        <img src="img/depositphotos_624177752-stock-illustration-business-success-man-standing-top.jpg" alt="Logros">
+        <h3>Mis logros personales</h3>
+        <button onclick="toggleInfo('logros')">Ver detalles</button>
+
+        <div id="logros" class="contenido">
+            <p>
+                Mejor bachiller hombre de la promocion 2026-Colegio Nacional Junin<br>
+                Acreedor de el incentivo al bachiller destacado<br>
+                Mejor calificacion del curso pre universitario para el ingreso a la Universidad USFX<br>
+            </p>
+        </div>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="propiedad-card">
+        <img src="img/1678262293389.png" alt="Motivaciones">
+        <h3>Mis motivaciones y ambiciones</h3>
+
+        <a href="ensayo.html">
+            <button>Leer mi ensayo</button>
+        </a>
+    </div>
+
+</div>
+
+        </section>
+    </main>
+    <script>
+function toggleInfo(id) {
+    var elemento = document.getElementById(id);
+
+    if (elemento.style.display === "block") {
+        elemento.style.display = "none";
+    } else {
+        elemento.style.display = "block";
+    }
+}
+</script>
+
+</body>
+</html>
